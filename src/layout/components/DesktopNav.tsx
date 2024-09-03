@@ -1,9 +1,15 @@
-import { externalRoutes, navRoutes } from '@/utils/PortfolioRoutes';
+import {
+  externalRoutes,
+  navRoutes,
+  portfolioRoutes,
+} from '@/utils/PortfolioRoutes';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { NameLogo } from '../../../public/assets/images';
+import Image from 'next/image';
 
 const DesktopNav = () => {
   const { asPath } = useRouter();
@@ -20,7 +26,9 @@ const DesktopNav = () => {
   return (
     <nav className={`transition-all duration-500 ease-in-out`}>
       <div className='flex items-center justify-between px-10 py-8'>
-        <div>PeterOduche</div>
+        <Link href={portfolioRoutes.HOME}>
+          <Image src={NameLogo} alt='logo' />
+        </Link>
 
         <div className='flex items-center gap-10'>
           <ul className='flex justify-around gap-8'>

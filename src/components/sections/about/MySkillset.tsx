@@ -19,7 +19,7 @@ const MySkillset = () => {
     <Wrapper>
       <Heading2 text='My Skillset' />
 
-      <div className='mt-3 lg:w-5/6'>
+      <div className='mt-3'>
         <p className='leading-9'>
           I specialize in building high-performance web applications with React
           and Next.js, focusing on creating scalable, server-rendered

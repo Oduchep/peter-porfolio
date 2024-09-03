@@ -23,7 +23,7 @@ const HomeHero = () => {
         <p>Hi , I am Peter</p>
 
         <div className='text-3xl font-semibold text-secondary-default lg:text-6xl lg:leading-[75px]'>
-          Crafting Elegant Interfaces, One Pixel at a Time&nbsp;
+          Developing Elegant Interfaces, One Pixel at a Time&nbsp;
           <span className='lg:text-3xl'>💻</span>
         </div>
 
